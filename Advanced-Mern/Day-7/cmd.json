@@ -1,0 +1,21 @@
+{
+    "name":"iphone",
+    "price":15000,
+    "category":"electronics"
+},
+[{
+    "name":"powerbank",
+    "price":1000,
+    "category":"electronics"
+},
+{
+    "name":"car",
+    "price":600,
+    "category":"electronics"
+}]
+
+{
+    "name":"tripod",
+    "price":700,
+    "category":"equipment"
+}

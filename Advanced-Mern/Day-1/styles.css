@@ -1,0 +1,23 @@
+.myform {
+  border: 2px solid black;
+  margin: 2rem 37em;
+  padding: 2rem 5rem;
+}
+
+.element {
+  margin-top: 2rem;
+}
+
+.btn {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: yellow;
+  color: black;
+}
+
+tr,
+th {
+  border: 2px solid black;
+}

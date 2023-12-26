@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title h1 {
+  margin: 0;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.page-title h2 {
+  margin: 0;
+}
+
+.add-reservation-button button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-reservation-button button:hover {
+  background-color: #555;
+}
+
+nav.side-navbar {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+}
+
+nav.side-navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.side-navbar li {
+  margin-bottom: 10px;
+}
+
+nav.side-navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.balance-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.balance-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.balance-box h3 {
+  margin: 0;
+}
+
+.details-container {
+  margin: 20px;
+}
+
+.horizontal-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.details-box h3 {
+  margin: 0;
+}

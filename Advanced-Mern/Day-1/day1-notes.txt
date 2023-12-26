@@ -1,0 +1,37 @@
+Scopes 
+
+Block - let & const [Access within {}curly braces ]
+Function (local) - var
+Global 
+Nested 
+
+var - Rediclared, Reassign (undefined)
+Let - Reassign, Cannot Redeclare (error)
+Const - Cannot Reassign and Cannot Redeclare (error)
+
+
+
+function -> set of statement perform specific task
+
+Hoisting -> variable or function accessed before calling it
+
+Higher Order function -> Function accepts another function as an argument or returns function
+
+Callback function -> Function passed inside another function
+
+
+
+Js Arrays
+
+Objects -> set of Key-Value Pairs
+Accessing Methods
+. operator (Static)
+[] operator (Dynamic)
+
+
+Promise -> Promise is an object that represents eventual completion of Asynchronous Operation
+Pending, fullfill, reject
+
+
+prototype chaining
+arr.__proto__.__proto__

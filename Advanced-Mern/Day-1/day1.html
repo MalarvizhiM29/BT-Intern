@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Details</h1>
+
+    <form action="" >
+        <div class="myform">
+            <div class="element">
+                <label for="name">Enter Name</label>
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="element">
+                <label for="age">Enter Age</label>
+            <input type="text" placeholder="Age" id="age">
+            </div>
+            <div class="element">
+                <label for="name">Enter RollNo</label>
+            <input type="text" placeholder="Rollno" id="roll">
+            </div>
+    
+            <button type="submit" onclick="save()" class="btn">Add</button>    
+        </div>
+    </form>
+
+    <button type="submit" onclick="filterme()" class="btn">Filter</button>
+    
+    <table id="mytable">
+        <tr>
+           <th>Name:</th>
+           <th>Age:</th>
+           <th>Rollno:</th>
+        </tr>
+        <tbody id="details">
+            
+        </tbody>
+    </table>
+</body>
+<script src="day1.js"></script>
+<script src="script.js"></script>
+</html>
