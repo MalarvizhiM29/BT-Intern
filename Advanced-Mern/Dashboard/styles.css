@@ -129,6 +129,10 @@ header {
   box-shadow: 1px 2px #333;
 }
 
+.btn-new:hover{
+  transform: scale(1.03);
+}
+
 .container{
   display: flex;
   margin: 2rem 10rem;

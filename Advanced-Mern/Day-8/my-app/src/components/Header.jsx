@@ -1,10 +1,13 @@
 import {Link} from "react-router-dom"
+import SwiggyLogo from "../swiggy.png";
 
 const Header=()=>{
     return(
       <>
         <div className='header'>
-            <div>LOGO</div>
+            <div>
+              <img src={SwiggyLogo} className="swiggylogo"></img>
+            </div>
             <div className='nav'>
               <span>
                 <Link to="/" className="headlink">Home</Link>

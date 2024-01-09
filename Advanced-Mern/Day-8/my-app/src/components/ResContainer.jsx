@@ -15,12 +15,12 @@ const ResContainer = ()=> {
   const fetchData = async()=>{
     const res = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.0168445&lng=76.9558321&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
     const json = await res.json();
-    setRestaurants(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
-    setList(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+    setRestaurants(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+    setList(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
   }
 
   if(restaurants.length==0){
-    return "Loading..."
+    return <div className='loader'>Loading...</div>
   }
 
   const toprest = ()=> {
@@ -47,8 +47,8 @@ const ResContainer = ()=> {
     return(
         <>
         <div className='homebtns'>
-        <input className='searchinput' value={searchText} onChange={updateSearchText} placeholder='Search'/>
         <button onClick={toprest} className='topbutton'>Top restaurant</button>
+        <input className='searchinput' value={searchText} onChange={updateSearchText} placeholder='Search'/> 
         </div>
         <div className='restaurant-container'>
           {
