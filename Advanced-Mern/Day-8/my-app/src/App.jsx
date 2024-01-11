@@ -1,8 +1,8 @@
 import './App.css'
 import Header from './components/Header'
-import About from './components/About'
+import Help from './components/Help'
 import ResContainer from './components/ResContainer'
-import Contact from './components/Contact'
+import Cart from './components/Cart'
 import ResDetails from './components/ResDetails'
 import {createBrowserRouter,Outlet,RouterProvider} from 'react-router-dom'
 
@@ -27,12 +27,12 @@ const router = createBrowserRouter([
       element: <ResContainer/>
     },
     {
-      path:"about",
-      element: <About/>
+      path:"help",
+      element: <Help/>
     },
     {
-      path:"contact",
-      element: <Contact/>
+      path:"cart",
+      element: <Cart/>
     },{
       path:"restaurants/:resid",
       element: <ResDetails/>
