@@ -10,13 +10,13 @@ const Header=()=>{
             </div>
             <div className='nav'>
               <span>
-                <Link to="/" className="headlink">Home</Link>
+                <Link to="/" className="headlink"><i class="fa-solid fa-house"></i>   Home</Link>
               </span>
               <span>
-                <Link to="/help" className="headlink">Help</Link>
+                <Link to="/help" className="headlink"><i class="fa-solid fa-handshake-angle"></i>    Help</Link>
               </span>
               <span>
-                <Link to="/cart" className="headlink">Cart</Link>
+                <Link to="/cart" className="headlink"><i class="fa-solid fa-cart-shopping"></i>   Cart</Link>
               </span>
             </div>
         

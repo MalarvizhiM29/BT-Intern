@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemCategory from './ItemCategory';
+import loadgif from '../loadgif.gif';
+import star from "../star.png";
 
 const ResDetails = () => {
 
@@ -30,16 +32,26 @@ const ResDetails = () => {
     }
 
     if(Object.keys(details).length === 0){
-      return <div className='loader'>Loading...</div>
+      return (
+        <div className='loader'>
+          <img src={loadgif} className='loadgif'></img>
+        </div>
+      )
     }
 
   return (
-    <div className='rest-detail'>
-      <div className='top-det-box'>
-      <div className='detail-name'>{details.name}</div>
-      <div className='detail-det'>{details.cuisines.join(', ')}</div>
-      <div className='detail-det'>{details.areaName}</div>
-      </div>
+      <div className='rest-detail'>
+        <div className='top-det-box'>
+          <div>
+            <div className='detail-name'>{details.name}</div>
+            <div className='detail-det'>{details.cuisines.join(', ')}</div>
+            <div className='detail-det'>{details.areaName}</div>
+          </div>
+          <div className='rating-box'>
+              <div className='food-name rating-box-rat'><img src={star} className="star"></img>{details.avgRatingString}</div>
+              <div className='food-name'>{details.totalRatingsString}</div>
+          </div>
+        </div>
       {categories.map((category)=>{
         return <ItemCategory 
            key ={category.card.card.title}

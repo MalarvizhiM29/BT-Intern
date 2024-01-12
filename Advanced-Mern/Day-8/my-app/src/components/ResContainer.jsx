@@ -63,8 +63,9 @@ const ResContainer = ()=> {
         <>
         <h2 className='grand-title'>Restaurants with online food delivery in Coimbatore</h2>
         <div className='homebtns'>
-        <button onClick={toprest} className='topbutton'>Top restaurant</button>
+        <button onClick={toprest} className='topbutton'>Ratings 4.4+</button>
         <button onClick={fastdel} className='topbutton'>Fast Delivery</button>
+        <i class="fa-solid fa-magnifying-glass"></i>
         <input className='searchinput' value={searchText} onChange={updateSearchText} placeholder='Search'/> 
         </div>
         <div className='restaurant-container'>
